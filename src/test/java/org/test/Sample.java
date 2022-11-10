@@ -7,6 +7,12 @@ public class Sample extends BaseClass {
 		chromeBrowser();
 		implicitlywait(20);
 		urlLaunch("https://www.facebook.com/");
+		
+		LoginPage l=new LoginPage();
+		sendKeys(l.getTxtusername(), "9159789164");
+		sendKeys(l.getTxtpassword(), "tamil9750");
+//		click(l.getBtnlogin());
+		
 		RegistrationPage r = new RegistrationPage();
 		click(r.getClick());
 		sendKeys(r.getFirstname(), "tamil");
@@ -20,11 +26,7 @@ public class Sample extends BaseClass {
 		click(r.getSignupbtn());
 
 		
-		LoginPage l=new LoginPage();
-		sendKeys(l.getTxtusername(), "9159789164");
-		sendKeys(l.getTxtpassword(), "tamil9750");
-		click(l.getBtnlogin());
-		
+	
 		
 	}
 
